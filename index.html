@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script>
+        var SystemJS = require('systemjs');
+
+        // loads './app.js' from the current directory
+        SystemJS.import('./js/main.ts').then(function (m) {
+            console.log(m);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="hello"></div>
+</body>
+
+</html>
